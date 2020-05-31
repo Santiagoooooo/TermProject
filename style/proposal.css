@@ -1,0 +1,26 @@
+body {
+  background-color: rgb(253, 253, 124);
+}
+h1 {
+  text-align: center;
+  font-size: 60px;
+}
+#gif {
+  position: absolute;
+  margin-top: 0px;
+}
+h1 {
+  font-family: "Arial Black", Gadget, sans-serif;
+}
+h2 {
+  font-family: "Comic Sans MS", cursive, sans-serif;
+  font-size:30px;
+}
+p {
+  font-size: 23px;
+  font-family: "Comic Sans MS", cursive, sans-serif;
+}
+ul {
+  font-size: 23px;
+  font-family: "Comic Sans MS", cursive, sans-serif;
+}
