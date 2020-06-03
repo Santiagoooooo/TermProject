@@ -8,30 +8,38 @@
     <style>
       ul {
         list-style-image: url(images/icon2.png);
-        margin-left: 40%;
+        font-family: sans-serif;
       }
-      .navigation{
-        list-style-image: url(images/location.png);
-        margin-left: 10%;
-      }
+
     </style>
   </head>
   <body>
-    <h1>Pokémon H<img src="images/pokeball icon.png" height="30" />me</h1>
-    <hr />
-    <img
-      src="images/pikachugif.gif"
-      hieght="20"
-      id="pikachu"
-      alt="Pikachu-gif"
-      title="Pikachu-gif"
-    />
-    <ul>
-      <li><h2><a href="#pokehistory">History of Pokémon</a></h2></li>
-      <li><h2><a href="#favourite">Top 5 favourite Pokémon 2020</a></h2></li>
-      <li><h2><a href="#updatednews">Updated News</a></h2></li>
+    <div class="sidenav">
+      <ul>
+      <li><a href="#pokehistory">History of Pokémon</a></li>
+    <li><a href="#favourite">Favourite Pokémon</a></li>
+  <li><a href="#updatednews">Updated News</a></li>
     </ul>
-    <hr />
+    
+    </div>
+
+    <h1>Pokémon H<img src="images/pokeball icon.png" height="30" />me</h1>
+    
+    <div class="topnav">
+      <a  class="active" href="Sitemap.html"><img src="images/direction.png"> Site Map</a>
+      <a href="#pokedex"><img src="images/location.png"> Pokédex</a>
+      <a href="#contact"><img src="images/girl.png"> Contact</a>
+      <div class="search-container">
+        <form>
+          <input type="text" placeholder="Search.." name="search">
+          <button type="submit">Submit</button>
+        </form>
+      </div>
+
+    </div>
+
+    
+
     <h3><a name="pokehistory">History of Pokémon</a></h3>
     <p>
       <img
@@ -263,9 +271,5 @@
         </td>
       </tr>
     </table>
-<ul class="navigation">
-  <li><h2><a href="Sitemap.html">Sitemap</a></h2></li>
-  <li><h2>Contact Us</h2></li>
-</ul>
   </body>
 </html>
