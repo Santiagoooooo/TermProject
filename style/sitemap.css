@@ -1,9 +1,6 @@
 body{
     background-color: rgb(247, 247, 107);
 }
-h1{
-    text-align: center;
-}
 
 ul{
     list-style-image: url(images/icon2.png);
