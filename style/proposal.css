@@ -24,3 +24,8 @@ ul {
   font-size: 23px;
   font-family: "Comic Sans MS", cursive, sans-serif;
 }
+
+.bottom{
+  float: left;
+  margin: auto;
+}
