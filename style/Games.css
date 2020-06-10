@@ -50,6 +50,10 @@ table {
   background-color: rgb(247, 245, 169);
   
 }
+td,th{
+  width: 100px;
+  padding:50px;
+}
 
 .modal {
   display: none;
