@@ -4,14 +4,9 @@ body {
 h1 {
   text-align: center;
   font-size: 60px;
-}
-#gif {
-  position: absolute;
-  margin-top: 0px;
-}
-h1 {
   font-family: "Arial Black", Gadget, sans-serif;
 }
+
 h2 {
   font-family: "Comic Sans MS", cursive, sans-serif;
   font-size:30px;
@@ -25,7 +20,29 @@ ul {
   font-family: "Comic Sans MS", cursive, sans-serif;
 }
 
-.bottom{
+
+
+.topnav {
+  overflow: hidden;
+  background-color: #333;
+}
+
+.topnav a {
   float: left;
-  margin: auto;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 21px 0px;
+  text-decoration: none;
+  font-size: 20px;
+  width: 25%;
+}
+
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.topnav a.active {
+  background-color: rgb(212, 84, 84);
+  color: white;
 }
