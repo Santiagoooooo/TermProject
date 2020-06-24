@@ -6,10 +6,10 @@ body {
     font-family: "Comic Sans MS", cursive, sans-serif;
     font-size: 40px;
   }
+
   .topnav {
     overflow: hidden;
     background-color: #333;
-    
   }
   
   .topnav a {
@@ -19,7 +19,7 @@ body {
     padding: 21px 0px;
     text-decoration: none;
     font-size: 20px;
-    width: 30%;
+    width: 25%;
   }
   
   .topnav a:hover {
@@ -31,20 +31,3 @@ body {
     background-color: rgb(212, 84, 84);
     color: white;
   }
- 
-
-  .pokedex-results, .results{
-  height: auto;
-  margin-right: -100%;
-  width:85.49%;
-  margin-left: 7%;
-
-  }
-
-  li, ul{
-    list-style: none;
-  }
-
-
-  
-
