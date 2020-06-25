@@ -48,3 +48,39 @@ picture {
   border-style: solid;
   border-image: initial;
 }
+
+.psyduck{
+	position: absolute;
+    top: 138px;
+    left: 199px;
+	text-align:center;
+}
+.keychain{
+	position: absolute;
+    top: 66px;
+    left:  228px;
+    text-align: center;
+}
+.haveball{
+	     position: absolute;
+       top:  180px;
+    left: 282px;
+    text-align: center;
+}
+
+.flex{
+	display:flex;
+	    margin-left: 100px;
+}
+.img{
+	    margin-left: 189px;
+}
+.img1{
+	margin-left: 128px;
+}
+.mar{
+	    margin-top: 60px;
+}
+.tweet{
+	    margin-left: 30px;
+}
