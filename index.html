@@ -71,6 +71,21 @@
           document.getElementById("history_text3").style.fontSize = "xx-large";
         }
       }
+
+      function changeName(){
+      let charizard = document.getElementById("charizard")
+      let gengar = document.getElementById("gengar")
+      let arcanine = document.getElementById("arcanine")
+      let bulbasaur = document.getElementById("bulbasaur")
+      let blaziken = document.getElementById("blaziken")
+      if(charizard.innerText == "Charizard"){
+      charizard.innerText = "リザードン";
+      gengar.innerText = "ゲンガー";
+      arcanine.innerText = "ウインディ";
+      bulbasaur.innerText = "フシギダネ";
+      blaziken.innerText = "バシャーモ";
+      } 
+      }
     </script>
   </head>
   <body>
@@ -211,13 +226,13 @@
     <h3><a name="favourite">Favourite Pokémon 2020</a></h3>
     <table>
       <tr>
-        <th></th>
+        <th><button class="Japanese" onclick="changeName()">Japanese Name</button></th>
         <th>Pokémon</th>
         <th># of Pokédex</th>
         <th>Type</th>
       </tr>
       <tr>
-        <td>1. Charizard</td>
+        <td class="japName" id="charizard">Charizard</td>
         <td>
           <img src="images/charizard.png" alt="charizard" title="charizard" />
         </td>
@@ -225,7 +240,7 @@
         <td>Fire</td>
       </tr>
       <tr>
-        <td>2. Gengar</td>
+        <td class="japName" id="gengar">Gengar</td>
         <td>
           <img src="images/gengar.png" alt="Gengar" title="Gengar" />
         </td>
@@ -233,7 +248,7 @@
         <td>Ghost & Poison</td>
       </tr>
       <tr>
-        <td>3. Arcanine</td>
+        <td class="japName" id="arcanine">Arcanine</td>
         <td>
           <img src="images/Arcanine.png" alt="Arcanine" title="Arcanine" />
         </td>
@@ -241,7 +256,7 @@
         <td>Fire</td>
       </tr>
       <tr>
-        <td>4. Bulbasaur</td>
+        <td class="japName" id="bulbasaur">Bulbasaur</td>
         <td>
           <img src="images/Bulbasaur.png" alt="Bulbasaur" title="Bulbasaur" />
         </td>
@@ -249,7 +264,7 @@
         <td>Grass</td>
       </tr>
       <tr>
-        <td>5. Blaziken</td>
+        <td class="japName" id="blaziken">Blaziken</td>
         <td>
           <img src="images/Blaziken.png" alt="Blaziken" title="Blaziken" />
         </td>
