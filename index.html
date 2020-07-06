@@ -30,7 +30,10 @@
       href="images/favicon-16x16.png"
     />
     <link rel="manifest" href="images/site.webmanifest" />
-
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
     <title>Pokémon Home</title>
     <link rel="stylesheet" type="text/css" href="style/index.css" sizes="" />
 
@@ -53,6 +56,21 @@
       gtag("js", new Date());
 
       gtag("config", "UA-169866425-1");
+
+      function largeSmallText() {
+        let text_size = document.getElementById("history_text");
+        if (text_size.style.fontSize == "xx-large") {
+          document.getElementById("history_text").style.fontSize = "x-large";
+          document.getElementById("history_text1").style.fontSize = "x-large";
+          document.getElementById("history_text2").style.fontSize = "x-large";
+          document.getElementById("history_text3").style.fontSize = "x-large";
+        } else {
+          document.getElementById("history_text").style.fontSize = "xx-large";
+          document.getElementById("history_text1").style.fontSize = "xx-large";
+          document.getElementById("history_text2").style.fontSize = "xx-large";
+          document.getElementById("history_text3").style.fontSize = "xx-large";
+        }
+      }
     </script>
   </head>
   <body>
@@ -64,13 +82,31 @@
       </ul>
     </div>
 
-    <h1>Pokémon H<img src="images/pokeball icon.png" height="30" alt="pokeball" title="pokeball"/>me</h1>
+    <h1>
+      Pokémon H<img
+        src="images/pokeball icon.png"
+        height="30"
+        alt="pokeball"
+        title="pokeball"
+      />me
+    </h1>
 
     <div class="topnav">
-      <a class="active" href="Sitemap.html"
-        ><img src="images/direction.png" alt="direction" title="direction" />
-        Site Map</a
-      >
+      <div class="dropdown">
+        <a class="active dropbtn" id="dropbtn" href="Sitemap.html"
+          ><img src="images/direction.png" alt="direction" title="direction" />
+          Site Map
+          <i class="fa fa-caret-down"></i>
+        </a>
+
+        <div class="dropdown-content">
+          <a href="pokedex.html">Pokédex</a>
+          <a href="Games.html">Pokémon Games</a>
+          <a href="TVshows.html">Pokémon Tv</a>
+          <a href="merchandise.html">Pokémon Merchandise</a>
+        </div>
+      </div>
+
       <a href="pokedex.html"
         ><img src="images/location.png" alt="location" title="location" />
         Pokédex</a
@@ -86,8 +122,14 @@
       </div>
     </div>
     <div class="text">
-      <h3><a name="pokehistory">History of Pokémon</a></h3>
-      <p>
+      <h3>
+        <a name="pokehistory">History of Pokémon</a
+        ><button class="enlarge" onclick="largeSmallText()">
+          Enlarge Text
+        </button>
+      </h3>
+
+      <p id="history_text">
         <img
           src="images/Satoshi-Tajiri.jpg"
           alt="Picture of Satoshi-Tajiri"
@@ -108,7 +150,7 @@
         issues Capsule Monsters was changed to Pocket Monsters, and Pokémon was
         born.
       </p>
-      <p>
+      <p id="history_text1">
         During the creation of the original game, Satoshi Tajiri went to extreme
         lengths to see his dream fulfilled. With the help of artist and friend
         Ken Sugimori and composer Junichi Masuda, Game Freak built Pokémon Red
@@ -128,7 +170,7 @@
         title="gameboy"
         class="history"
       />
-      <p>
+      <p id="history_text2">
         On February 27, 1996, Pokémon Red and Green Versions were released on
         the original Game Boy. Upon release, the game only saw modest sales,
         although, after players discovered Mew, the youth magazine CoroCoro
@@ -148,7 +190,7 @@
         title="anime"
         id="anime"
       />
-      <p>
+      <p id="history_text3">
         An anime series was born with the main character and trainer named
         Satoshi – after Satoshi Tajiri, though this was later changed in English
         to Ash Ketchum – with his rival named after Shigeru Miyamoto – later
@@ -160,7 +202,10 @@
         it aired in the US in 1999. Plus, the first-ever Pokémon Centre was
         opened in Tokyo which focused on merchandise and all other spin-offs.
       </p>
-      <h5>source credit to: https://happymag.tv/the-evolution-of-pokemon-and-the-story-of-satoshi-tajiri/</h5>
+      <h5>
+        source credit to:
+        https://happymag.tv/the-evolution-of-pokemon-and-the-story-of-satoshi-tajiri/
+      </h5>
     </div>
     <hr />
     <h3><a name="favourite">Favourite Pokémon 2020</a></h3>
